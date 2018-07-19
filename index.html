@@ -10,13 +10,38 @@
 </head>
 
 <body>
-  <main class="container-fluid">
-    <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </p>
+  <main>
+    <div class="row">
+      <div class="top-row col-12">
+        <h1 class="heading display-1">which robot r u?</h1>
+      </div>
+      <div class="col-12 container-fluid d-flex">
+        <div class="col-sm button-container m-auto">
+          <div class="form-group form-inline">
+            <input type="email" class="form-control col-10 mr-4" id="inputName" placeholder="tell me your name">
+            <button type="submit col-2" class="btn btn-primary">submit</button>
+          </div>
+          <div class="form-group form-inline">
+            <input type="email" class="form-control col-10 mr-4" id="inputEmail" placeholder="tell me your email">
+            <button type="submit col-2" class="btn btn-primary">submit</button>
+            <!-- <small id="emailHelp" class="form-text text-muted">enter your e-mail and I will show your other robot side.</small> -->
+          </div>
+          <div class="form-group form-inline">
+            <input type="email" class="form-control col-10 mr-4" id="inputFavoritePlanet" placeholder="Tell me your favorite planet?">
+            <button type="submit col-2" class="btn btn-primary">submit</button>
+            <!-- <small id="emailHelp" class="form-text text-muted">enter your favorite planet and I will show your robot alter ego on that planet.</small> -->
+          </div>
+
+        </div>
+        <div id="response" class="col-sm button-container m-auto">
+          One of three columns
+        </div>
+      </div>
+
     </div>
+
+
+
   </main>
 
   <script src="/node_modules/jquery/dist/jquery.min.js"></script>
