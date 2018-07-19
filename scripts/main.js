@@ -3,9 +3,13 @@
     document.body.querySelector('#button').addEventListener('click', event => {
       event.preventDefault();
 
-      let data = document.querySelector('#input').value;
+      let data = [...document.querySelectorAll('.form-control-lg')].map(item => item.value);
 
-      document.getElementById("response").innerHTML = `<img src= "https://robohash.org/${data}.png">`;
+
+      data.forEach(item => {
+        document.getElementById("response").innerHTML = `<img src= "https://robohash.org/${data}.png?size=250x250">`;
+      })
+
 
     });
 
