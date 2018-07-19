@@ -3,11 +3,11 @@
     document.body.querySelector('#button').addEventListener('click', event => {
       event.preventDefault();
 
-      let data = [...document.querySelectorAll('.form-control-lg')].map(item => item.value);
 
+      let data = [...document.querySelectorAll('#input')].map(item => item.value);
 
       data.forEach(item => {
-        document.getElementById("response").innerHTML = `<img src= "https://robohash.org/${data}.png?size=250x250">`;
+        document.getElementById("response").innerHTML = `<img src= "https://robohash.org/${data}.png?set=set2 ">`;
       })
 
 
