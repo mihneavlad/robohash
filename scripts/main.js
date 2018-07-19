@@ -1,8 +1,12 @@
 (function(){
 
+    document.body.querySelector('#button').addEventListener('click', event => {
+      event.preventDefault();
 
-  let newRequest = new XMLHttpRequest();
+      let data = document.querySelector('#input').value;
 
-  newRequest.open("GET", )
+      document.getElementById("response").innerHTML = `<img src= "https://robohash.org/${data}.png">`;
+
+    });
 
 })();
